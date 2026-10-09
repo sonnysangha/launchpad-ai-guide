@@ -1,7 +1,7 @@
 # Launchpad with an AI onboarding guide
 
 A small, fictional project-management app with a talking onboarding guide built on
-[Synthesia Interactive Avatars](https://www.synthesia.io/features/avatars/interactive-avatars)
+[Synthesia Interactive Avatars](https://www.synthesia.io/features/avatars/interactive-avatars?utm_source=youtube&utm_medium=creator&utm_campaign=interactive_avatar_api&utm_content=sonny)
 and [LiveKit](https://livekit.io). This is the finished app from the build video.
 
 The guide greets new users, tours the app by clicking the real buttons, answers
@@ -28,6 +28,7 @@ has the skills to install and the prompts used in the video.
 | --- | --- |
 | Clerk publishable key and secret key | In the [Clerk dashboard](https://dashboard.clerk.com), create an application and open **API keys**. Use the development keys. |
 | LiveKit URL, API key, API secret | Create a free project on [LiveKit Cloud](https://cloud.livekit.io). It also runs the speech-to-text and Cartesia voice, so you don't need a separate Cartesia key. |
+| Synthesia account | [Sign up for Synthesia Interactive Avatars](https://www.synthesia.io/features/avatars/interactive-avatars?utm_source=youtube&utm_medium=creator&utm_campaign=interactive_avatar_api&utm_content=sonny). |
 | Synthesia API key | [Create your API key](https://docs.synthesia.io/reference/synthesia-api-quickstart#create-your-api-key). Your plan needs Interactive Avatars. |
 | Synthesia avatar ID | In [Synthesia Studio](https://app.synthesia.io), open an avatar's ••• menu and choose **Copy Interactive ID**. Stock actor avatars such as Ryan or Ada don't work. |
 | OpenAI API key | [platform.openai.com/api-keys](https://platform.openai.com/api-keys) |
