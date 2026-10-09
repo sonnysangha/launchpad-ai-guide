@@ -1,0 +1,4 @@
+# Official PyPI stable versions checked 2026-10-05; see SOURCES.md.
+livekit-agents[openai,silero]==1.8.4
+livekit-plugins-synthesia==1.8.4
+python-dotenv==1.2.4

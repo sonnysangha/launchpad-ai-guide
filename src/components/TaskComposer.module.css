@@ -1,0 +1,20 @@
+.composer { margin-bottom: 22px; }
+.heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.heading p { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 12px; line-height: 1.6; }
+.heading p > svg { flex-shrink: 0; color: #6271c8; }
+.heading > button { min-height: 36px; font-size: 12px; flex-shrink: 0; }
+.form { margin-top: 15px; padding: 20px; border: 1px solid #dbe0ec; border-radius: 10px; background: #fff; box-shadow: 0 6px 24px #1d2d5110; }
+.guided { border-color: #a5ade1; box-shadow: 0 0 0 3px #6975cb12; }
+.formTitle { display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px; }
+.formTitle h2 { display: flex; align-items: center; gap: 8px; color: #34415b; font-size: 14px; font-weight: 600; }
+.fields { display: flex; gap: 16px; margin-bottom: 16px; }
+.fields > div { min-width: 0; }
+.name { flex: 1; }
+.form label { display: block; margin-bottom: 7px; font-size: 12px; font-weight: 550; color: #495570; }
+.form input, .form select, .form textarea { width: 100%; min-height: 39px; padding: 9px 11px; border: 1px solid #d9dfeb; border-radius: 6px; background: #fff; color: #34415b; font: inherit; font-size: 13px; line-height: 1.5; }
+.form textarea { resize: vertical; }
+.form input:disabled, .form select:disabled, .form textarea:disabled { background: #f7f8fc; color: #657089; }
+.footer { display: flex; align-items: center; gap: 10px; margin-top: 16px; }
+.footer > span { flex: 1; font-size: 11px; line-height: 1.5; color: var(--muted); }
+.footer button { min-height: 35px; font-size: 12px; }
+@media (max-width: 640px) { .heading { align-items: flex-start; gap: 10px; } .heading p { font-size: 11px; max-width: 175px; } .form { padding: 15px; } .fields { gap: 10px; } .fields > div:last-child { width: 108px; } .form input, .form select, .form textarea { font-size: 16px; } .footer { flex-wrap: wrap; justify-content: flex-end; } .footer > span { flex-basis: 100%; } }

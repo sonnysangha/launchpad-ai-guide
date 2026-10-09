@@ -1,0 +1,95 @@
+.workspace { display: grid; grid-template-columns: 224px minmax(0, 1fr); min-height: calc(100dvh - 64px); }
+.sidebar { position: sticky; top: 0; height: calc(100dvh - 64px); background: #f7f8fa; border-right: 1px solid var(--line); padding: 26px 14px 18px; display: flex; flex-direction: column; align-self: start; }
+.workspaceIdentity { display: flex; align-items: center; gap: 10px; padding: 0 10px 32px; min-width: 0; }
+.workspaceAvatar { display: grid; place-items: center; flex-shrink: 0; width: 35px; height: 35px; border: 1px solid #d8dce5; border-radius: 9px; background: white; font-size: 15px; font-weight: 700; color: var(--accent); }
+.workspaceIdentity > div { min-width: 0; }
+.workspaceIdentity strong { display: block; font-size: 13px; font-weight: 650; overflow-wrap: anywhere; }
+.workspaceIdentity small { display: block; font-size: 11px; color: var(--muted); margin-top: 5px; }
+.primaryNavigation { display: flex; flex-direction: column; gap: 28px; }
+.navLabel { display: flex; align-items: center; justify-content: space-between; padding: 0 12px; margin-bottom: 11px; color: #6c7586; font-size: 11px; font-weight: 550; }
+.navLabel > span { font-size: 10px; color: var(--muted); }
+.navButton { display: flex; align-items: center; gap: 10px; width: 100%; min-height: 39px; border: 0; border-radius: 6px; background: transparent; color: #626e83; text-align: left; padding: 10px 12px; font-size: 13px; font-weight: 450; }
+.navButton > span { min-width: 0; overflow-wrap: anywhere; }
+.navButton small { margin-left: auto; padding: 2px 4px; border-radius: 3px; font-size: 10px; color: var(--muted); }
+.navButton:hover { background: #eceef5; color: var(--ink); }
+.activeNav { background: #e9ebfa; color: #464fc5; font-weight: 550; }
+.activeNav:hover { background: #e2e5f9; color: #464fc5; }
+.projectDot { flex-shrink: 0; width: 9px; height: 9px; background: #8c90db; border: 1px solid #7c82d4; border-radius: 3px; }
+.sidebarBottom { margin-top: auto; padding-top: 28px; }
+.sidebarNote { display: flex; align-items: center; gap: 7px; padding: 17px 12px 0; margin-top: 15px; border-top: 1px solid var(--line); color: var(--muted); font-size: 10px; }
+.content { min-width: 0; padding: 0 32px 110px; background: white; }
+.contentBreadcrumb { display: flex; gap: 10px; align-items: center; min-height: 57px; font-size: 11px; color: var(--muted); }
+.contentBreadcrumb > span:first-child { max-width: 220px; overflow-wrap: anywhere; }
+.contentBreadcrumb > span:nth-last-child(2) { min-width: 0; overflow-wrap: anywhere; }
+.contentBreadcrumb strong { color: #566177; font-weight: 450; }
+.privateLabel { display: inline-flex; gap: 5px; align-items: center; margin-left: auto; font-size: 11px; white-space: nowrap; }
+.projectSection[hidden], .projectPanel[hidden], .pagePanel[hidden] { display: none; }
+.projectHeader { display: flex; align-items: flex-start; justify-content: space-between; gap: 22px; padding: 15px 0 25px; }
+.projectHeader > div { min-width: 0; }
+.projectTitle { display: flex; align-items: center; gap: 11px; }
+.projectIcon { width: 34px; height: 34px; flex-shrink: 0; display: grid; place-items: center; color: #6e77c7; border: 1px solid #e4e6f2; background: #f6f7fd; border-radius: 8px; }
+.projectTitle h1 { font-size: 24px; line-height: 1.3; letter-spacing: -.65px; font-weight: 650; overflow-wrap: anywhere; }
+.projectMeta { display: flex; align-items: center; gap: 13px; margin-top: 13px; font-size: 11px; color: var(--muted); }
+.projectMeta > span + span:not(.unsavedDot + span) { border-left: 1px solid var(--line); padding-left: 13px; }
+.ownerInline { display: inline-flex; align-items: center; gap: 6px; }
+.ownerInline > span { display: inline-grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; background: #eeedfa; color: #566193; font-size: 10px; }
+.unsavedDot { width: 5px; height: 5px; border-radius: 50%; background: #b7a473; margin-right: -6px; }
+.workflowBadge { display: inline-flex; align-items: center; gap: 6px; flex-shrink: 0; margin-top: 5px; padding: 6px 8px; border: 1px solid #e4e7f0; border-radius: 5px; background: #fafbfe; color: var(--muted); font-size: 11px; }
+.viewBar { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); }
+.viewTabs { display: flex; gap: 23px; }
+.viewTabs > button { position: relative; display: flex; align-items: center; gap: 7px; min-height: 45px; padding: 0 2px; border: 0; border-bottom: 2px solid transparent; background: transparent; color: var(--muted); font-size: 13px; font-weight: 450; }
+.viewTabs > button:hover { color: #454f77; }
+.viewTabs > button[aria-selected="true"] { border-bottom-color: #676fd1; color: #4e57b9; font-weight: 550; }
+.viewHint { font-size: 11px; color: var(--muted); }
+.projectPanel { padding-top: 22px; }
+.pagePanel { padding-top: 19px; }
+.pageHeading { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 28px; }
+.pageHeading h1 { font-size: 25px; font-weight: 650; line-height: 1.3; letter-spacing: -.6px; }
+.pageHeading p { margin-top: 9px; color: var(--muted); font-size: 13px; line-height: 1.7; }
+.countBadge { padding: 5px 8px; border: 1px solid var(--line); border-radius: 5px; background: #fafbfe; font-size: 11px; color: var(--muted); }
+.membersTable { border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.membersTable table { width: 100%; border-collapse: collapse; text-align: left; }
+.membersTable th { color: var(--muted); font-size: 11px; font-weight: 500; background: #fafbfe; padding: 13px 20px; border-bottom: 1px solid var(--line); }
+.membersTable td { padding: 21px 20px; font-size: 13px; }
+.membersTable th:first-child { width: 46%; }
+.memberIdentity { display: flex; align-items: center; gap: 11px; }
+.memberAvatar { display: grid; place-items: center; flex-shrink: 0; width: 33px; height: 33px; border-radius: 50%; color: #566193; background: #ebeefa; font-size: 13px; }
+.memberIdentity strong, .memberIdentity small { display: block; }
+.memberIdentity strong { font-size: 13px; font-weight: 500; }
+.memberIdentity small { margin-top: 5px; color: var(--muted); font-size: 11px; }
+.ownerBadge { display: inline-flex; padding: 4px 7px; border-radius: 4px; color: #566193; background: #f0f1fa; font-size: 11px; }
+.memberAccess { display: flex; align-items: center; gap: 6px; color: var(--muted); font-size: 11px; }
+.memberNote { display: flex; align-items: center; gap: 7px; font-size: 11px; color: var(--muted); line-height: 1.7; margin-top: 17px; }
+.accessInspector { max-width: 720px; margin-top: 40px; border: 1px solid var(--line); border-radius: 8px; padding: 21px 22px; }
+.inspectorHeading { display: flex; justify-content: space-between; gap: 16px; align-items: center; margin-bottom: 19px; }
+.inspectorHeading h2 { font-size: 13px; font-weight: 550; }
+.inspectorHeading > span { color: var(--muted); font-size: 11px; }
+.roleButtons { display: flex; flex-wrap: wrap; gap: 7px; }
+.roleButtons button { border: 1px solid var(--line); border-radius: 5px; background: white; padding: 7px 10px; color: var(--muted); font-size: 11px; }
+.roleButtons button:hover { border-color: #b5bfdb; color: #4759a0; }
+.roleButtons button[aria-pressed="true"] { border-color: #c0c5e9; background: #f1f2fd; color: #5864b9; }
+.roleExplanation { margin-top: 19px; min-height: 77px; }
+.roleExplanation strong { font-size: 11px; font-weight: 550; color: #59677e; }
+.roleExplanation p { max-width: 625px; margin-top: 8px; font-size: 12px; line-height: 1.85; color: var(--muted); }
+.handbookToolbar { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 17px; }
+.handbookToolbar > div { width: min(380px, 100%); }
+.handbookToolbar > span { font-size: 12px; color: var(--muted); white-space: nowrap; }
+.handbook { border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.handbook article + article { border-top: 1px solid var(--line); }
+.handbook h2 { font-size: 13px; font-weight: 500; }
+.handbook h2 button { width: 100%; display: flex; align-items: center; justify-content: space-between; text-align: left; gap: 20px; background: white; border: 0; padding: 19px 20px; }
+.handbook h2 button:hover { background: #fafbfe; }
+.handbook h2 button[aria-expanded="true"] { color: var(--accent); background: #fcfcff; }
+.handbook h2 button[aria-expanded="true"] svg { transform: rotate(180deg); }
+.handbook article > div { padding: 0 20px 22px; background: #fcfcff; }
+.handbook p { max-width: 780px; font-size: 13px; line-height: 1.85; color: var(--muted); }
+.handbook small { display: flex; align-items: center; gap: 7px; font-size: 11px; margin-top: 18px; color: var(--muted); }
+.noResults { padding: 45px 20px; text-align: center; }
+.noResults > svg { color: var(--muted); }
+.noResults h2 { margin: 14px 0 8px; }
+.noResults p { margin-inline: auto; }
+.helpSourceNote { color: var(--muted); font-size: 11px; margin-top: 20px; }
+@media (min-width: 1550px) { .content { padding-inline: 48px; } }
+@media (max-width: 1180px) { .workspace { grid-template-columns: 198px minmax(0, 1fr); } .content { padding-inline: 24px; } .projectTitle h1 { font-size: 23px; } }
+@media (max-width: 850px) { .workspace { grid-template-columns: 176px minmax(0, 1fr); } .content { padding-inline: 20px; } .sidebar { padding-inline: 9px; } .privateLabel { display: none; } .workflowBadge { display: none; } .membersTable th, .membersTable td { padding-inline: 14px; } .membersTable th:first-child { width: auto; } .memberAccess { max-width: 130px; line-height: 1.6; } }
+@media (max-width: 640px) { .workspace { display: block; } .sidebar { position: static; height: auto; display: grid; grid-template-columns: minmax(0, 1fr) auto auto; align-items: center; gap: 5px; padding: 10px 12px; border-right: 0; border-bottom: 1px solid var(--line); } .workspaceIdentity, .navLabel, .sidebarNote { display: none; } .primaryNavigation, .sidebarBottom { display: contents; } .projectGroup, .peopleGroup { min-width: 0; } .navButton { gap: 7px; min-height: 40px; padding: 8px; font-size: 12px; } .navButton small { display: none; } .projectGroup .navButton > span:nth-child(2) { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; } .sidebarBottom .navButton { width: auto; } .content { padding: 0 18px 110px; } .contentBreadcrumb { min-height: 48px; font-size: 10px; gap: 7px; } .contentBreadcrumb > span:first-child { max-width: 110px; } .projectHeader { padding: 13px 0 20px; } .projectTitle { gap: 9px; } .projectTitle h1 { font-size: 23px; } .projectTitle .projectIcon { width: 30px; height: 30px; } .projectMeta { gap: 9px; flex-wrap: wrap; line-height: 1.6; } .projectMeta > span + span:not(.unsavedDot + span) { padding-left: 9px; } .projectMeta > span:last-child { font-size: 10px; } .viewHint { font-size: 10px; } .pagePanel { padding-top: 12px; } .pageHeading { align-items: flex-start; gap: 13px; margin-bottom: 22px; } .pageHeading h1 { font-size: 23px; } .pageHeading p { font-size: 12px; } .pageHeading .button { padding-inline: 9px; font-size: 11px; white-space: nowrap; } .pageHeading .button svg { display: none; } .membersTable th, .membersTable td { padding: 13px 11px; } .membersTable th:last-child, .membersTable td:last-child { display: none; } .memberNote { align-items: flex-start; font-size: 11px; } .accessInspector { padding: 18px; margin-top: 28px; } .inspectorHeading > span { display: none; } .handbookToolbar > span { display: none; } .handbookToolbar > div { width: 100%; } .handbook h2 { font-size: 13px; line-height: 1.6; } .handbook h2 button { padding: 17px; } .handbook article > div { padding-inline: 17px; } }

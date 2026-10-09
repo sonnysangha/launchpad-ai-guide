@@ -1,0 +1,49 @@
+.taskWorkspace { min-width: 0; }
+.toolbar { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 20px; }
+.taskCount { display: flex; align-items: center; gap: 5px; color: var(--muted); font-size: 12px; }
+.taskCount strong { color: #5f6a7e; font-weight: 550; }
+.taskCount > span { margin-left: 2px; color: var(--muted); }
+.controls { display: flex; align-items: center; gap: 10px; }
+.controls > div { width: 210px; }
+.stageSelect { min-height: 34px; padding: 7px 8px; font-size: 11px; border: 1px solid #e2e5ed; border-radius: 6px; background: white; color: #687185; cursor: pointer; }
+.stageSelect:hover { border-color: #bec5d6; }
+.boardTasks { display: flex; flex-direction: column; gap: 10px; padding-top: 17px; }
+.inspectLabel { font-size: 10px; color: var(--muted); }
+.stageFilters { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+.stageFilters > button { display: flex; align-items: center; gap: 7px; min-height: 31px; padding: 6px 9px; border: 1px solid #e5e8f0; border-radius: 5px; color: var(--muted); background: white; font-size: 11px; }
+.stageFilters > button > span:last-child:not(.stageDot) { color: var(--muted); padding-left: 2px; font-size: 10px; }
+.stageFilters > button:hover { background: #fafbfe; border-color: #bdc6df; }
+.stageFilters > button[aria-pressed="true"] { background: #f2f3fd; border-color: #bfc5e8; color: #5563bc; }
+.stageDot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; border: 1px solid #a8b2c2; background: #e3e8f0; flex-shrink: 0; }
+.build { background: #f1dfac; border-color: #d9bd73; }
+.review { background: #ded4f0; border-color: #bba7d9; }
+.handoff { background: #cde6dc; border-color: #9cc4b4; }
+.listFrame { border: 1px solid var(--line); border-radius: 7px; overflow: auto; }
+.taskTable { width: 100%; border-collapse: collapse; text-align: left; }
+.taskTable th { padding: 13px 15px; background: #fafbfe; color: var(--muted); font-size: 11px; font-weight: 500; border-bottom: 1px solid var(--line); white-space: nowrap; }
+.taskTable th:first-child { width: 60%; }
+.taskTable td { padding: 15px; border-bottom: 1px solid #edf0f5; }
+.taskTable tr:last-child td { border-bottom: 0; }
+.taskTable tbody tr:hover { background: #fdfdff; }
+.taskTable th:first-child, .taskTable td:first-child { padding-left: 17px; }
+.taskNameButton { width: 100%; display: flex; align-items: flex-start; gap: 12px; padding: 0; border: 0; background: transparent; text-align: left; }
+.taskNameButton > svg { margin-top: 3px; color: #a9b1c0; }
+.taskNameButton strong { display: block; font-size: 14px; line-height: 1.5; font-weight: 500; color: #42506a; }
+.taskNameButton small { display: block; font-size: 12px; line-height: 1.7; margin-top: 4px; color: var(--muted); max-width: 450px; }
+.taskNameButton:hover strong { color: #5965bf; }
+.stageValue { display: inline-flex; align-items: center; gap: 7px; font-size: 11px; color: var(--muted); white-space: nowrap; }
+.taskReference { font: 9px ui-monospace, monospace; color: var(--muted); white-space: nowrap; }
+.noResults { display: flex; flex-direction: column; align-items: center; padding: 42px 20px; color: var(--muted); text-align: center; }
+.noResults h2 { margin-top: 14px; font-size: 13px; font-weight: 550; color: #66748a; }
+.noResults p { margin-top: 8px; font-size: 12px; }
+.noResults button { margin-top: 8px; }
+.scopeNote { display: flex; align-items: center; gap: 7px; font-size: 11px; color: var(--muted); line-height: 1.7; margin-top: 18px; }
+.previewNotice { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 14px 16px; margin-bottom: 22px; border: 1px solid #e5e5ef; border-radius: 7px; background: #fafaff; }
+.previewNotice > div { display: flex; align-items: center; gap: 11px; }
+.previewNotice p { font-size: 12px; color: var(--muted); line-height: 1.7; }
+.previewBadge { font-size: 10px; white-space: nowrap; padding: 4px 6px; border-radius: 4px; color: #756343; background: #fffaf0; border: 1px solid #ebe4d6; }
+.previewNotice > button { font-size: 11px; min-height: 31px; white-space: nowrap; padding-block: 6px; }
+@media (max-width: 1050px) { .referenceColumn { display: none; } .taskTable th:first-child { width: 65%; } }
+@media (max-width: 750px) { .previewNotice { align-items: flex-start; flex-direction: column; gap: 12px; } .previewNotice > div { align-items: flex-start; } }
+@media (max-width: 640px) { .toolbar { gap: 12px; margin-bottom: 17px; } .controls { min-width: 0; gap: 7px; } .controls > div { width: 152px; } .controls input { font-size: 16px; } .stageSelect { max-width: 115px; font-size: 13px; } .taskCount { font-size: 11px; flex-shrink: 0; } .taskCount > span { display: none; } .taskTable th, .taskTable td { padding: 13px 10px; } .taskTable th:first-child, .taskTable td:first-child { padding-left: 12px; } .taskTable th:nth-child(3), .taskTable td:nth-child(3) { display: none; } .taskTable th:first-child { width: 73%; } .taskNameButton { gap: 8px; } .taskNameButton strong { font-size: 13px; } .taskNameButton small { font-size: 11px; line-height: 1.65; } .taskNameButton > svg { width: 11px; } .stageValue { font-size: 11px; gap: 5px; } .stageFilters { gap: 6px; } .stageFilters > button { padding-inline: 8px; font-size: 11px; } .scopeNote { align-items: flex-start; font-size: 10px; } .previewNotice { padding: 13px; } .previewNotice > div { flex-direction: column; gap: 7px; } }
+@media (max-width: 360px) { .toolbar { flex-direction: column; align-items: stretch; gap: 10px; } .controls { flex-wrap: wrap; } .controls > div { flex-basis: 100%; width: 100%; min-width: 0; } }
