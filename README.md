@@ -26,7 +26,7 @@ has the skills to install and the prompts used in the video.
 
 | Key | Where to get it |
 | --- | --- |
-| Clerk publishable key and secret key | In the [Clerk dashboard](https://dashboard.clerk.com), create an application and open **API keys**. Use the development keys. |
+| Clerk publishable key and secret key | [Sign up for Clerk](https://go.clerk.com/sonny), then in the Clerk dashboard create an application and open **API keys**. Use the development keys. |
 | LiveKit URL, API key, API secret | Create a free project on [LiveKit Cloud](https://cloud.livekit.io). It also runs the speech-to-text and Cartesia voice, so you don't need a separate Cartesia key. |
 | Synthesia account | [Sign up for Synthesia Interactive Avatars](https://www.synthesia.io/features/avatars/interactive-avatars?utm_source=youtube&utm_medium=creator&utm_campaign=interactive_avatar_api&utm_content=sonny). |
 | Synthesia API key | [Create your API key](https://docs.synthesia.io/reference/synthesia-api-quickstart#create-your-api-key). Your plan needs Interactive Avatars. |
